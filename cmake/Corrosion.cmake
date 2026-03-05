@@ -1862,6 +1862,7 @@ function(corrosion_add_cxxbridge cxx_target)
                     $CACHE{CORROSION_TOOLS_CARGO} install
                     cxxbridge-cmd
                     --git "https://github.com/philippremy/cxx.git"
+                    --rev "b2db158a9a11cd7f4b7d2f063c53fa1c15c84230"
                     --locked
                     --root "${CMAKE_BINARY_DIR}/corrosion/cxxbridge_v${cxx_required_version}"
                     --quiet
