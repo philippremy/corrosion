@@ -1861,7 +1861,7 @@ function(corrosion_add_cxxbridge cxx_target)
                         "CARGO_BUILD_RUSTC=$CACHE{CORROSION_TOOLS_RUSTC}"
                     $CACHE{CORROSION_TOOLS_CARGO} install
                     cxxbridge-cmd
-                    --version "${cxx_required_version}"
+                    --git "https://github.com/philippremy/cxx.git"
                     --locked
                     --root "${CMAKE_BINARY_DIR}/corrosion/cxxbridge_v${cxx_required_version}"
                     --quiet
